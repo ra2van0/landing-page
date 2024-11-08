@@ -1,0 +1,61 @@
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+}
+
+.hero {
+    display: flex;
+    gap: 50px;
+}
+
+img {
+    width: 600px;
+    height: 170px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.illustrations {
+    display: flex;
+}
+
+.illustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+}
