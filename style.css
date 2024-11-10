@@ -1,61 +1,175 @@
-.body {
+body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .top {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;  
+    padding: 0 180px 36px;
 }
 
 ul {
     display: flex;
     list-style-type: none;
     gap: 32px;
+    flex-wrap: wrap;
+}
+
+.header-logo {
+    flex: 1;
 }
 
 .hero {
     display: flex;
     gap: 50px;
+    padding: 36px 0 100px 180px;
+    justify-content:flex-end;
+    align-items: center;
 }
 
-img {
+.hero img {
     width: 600px;
-    height: 170px;
+    flex: 1;
+    flex-shrink: 0;
+    min-width: 100px;
+    box-sizing: border-box;
+}
+
+.hero .hero-text {
+    flex: 1;
+    flex-shrink: 0;
+    min-width: 100px;
+    box-sizing: border-box;
 }
 
 .information {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    flex: 1;
 }
 
 .illustrations {
     display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .illustration {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-.quote {
+.testimonial {
     display: flex;
     flex-direction: column;
+    background-color: #a5cf61;
+    padding: 100px 360px;
+    flex: 1;
 }
 
-.sign-up {
+.join {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    background-color: #e3e566;
+    border-radius: 15px;
+    padding: 18px 144px;
+    margin: 100px 260px;
+    flex: 1;
+    gap: 32px;
 }
 
 .footer {
-    text-align: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    padding: 16px;
+}
+
+.header img {
+    width: 72px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.illustration img {
+    width: 200px;
+    border: 5px solid #e3e566;
+    border-radius: 25px;
+}
+
+.top, .footer {
+    background-color: #264e49;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin-bottom: 0;
+}
+
+.header h4, .hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header h3 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+button {
+    background-color: #e3e566;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.information h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937
+}
+
+.illustration p {
+    width: 200px;
+}
+
+.testimonial h2 {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.testimonial h3 {
+    align-self: flex-end;
+}
+
+.join .join-text {
+    flex: 1;
+}
+
+.join button {
+    flex: 0 0 auto;
 }
